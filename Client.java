@@ -117,7 +117,7 @@ public class Client {
             }
             else if (isLose ==1) {
                 String answer = getAnswer();
-                System.out.println("Noooooob guy!!");
+                System.out.println("Sorry guy");
                 System.out.println("The word was..." + answer);
             }
 
