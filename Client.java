@@ -72,7 +72,7 @@ public class Client {
         System.out.println("Connect to server " + HOST + ":" + INIT_PORT);
         try {
             // init socket with init port
-            socket = new Socket(HOST, INIT_PORT);
+            socket = new Socket("server", INIT_PORT);
             // send "start" to get new port
             socketOutput = new ObjectOutputStream(socket.getOutputStream());
             socketOutput.writeObject("start");
@@ -84,7 +84,7 @@ public class Client {
             keyboard = new Scanner(System.in);
 
             //// switch to new port
-            socket = new Socket(HOST, Integer.parseInt(newPort));
+            socket = new Socket("server", Integer.parseInt(newPort));
             socketOutput = new ObjectOutputStream(socket.getOutputStream());
             socketInput = new ObjectInputStream(socket.getInputStream());
 
