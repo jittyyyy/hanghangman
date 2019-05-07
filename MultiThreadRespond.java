@@ -15,7 +15,7 @@ public class MultiThreadRespond implements Runnable{
     private ObjectInputStream socketInput;
 
     private int MAX_TRY = 7;
-
+///////////////
     public MultiThreadRespond(int port){
         this.port = port;
         try{
