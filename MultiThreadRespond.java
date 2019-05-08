@@ -57,7 +57,7 @@ public class MultiThreadRespond implements Runnable{
         StringBuilder res_missed = new StringBuilder();
 
 
-        ////   hidden_word|miss_count|missed|isWin|isLose
+        //////   hidden_word|miss_count|missed|isWin|isLose
 
         System.out.println("Start Games : " + rand_word);
         while(true){
