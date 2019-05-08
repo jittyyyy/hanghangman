@@ -28,10 +28,10 @@ public class MultiThreadRespond implements Runnable{
 
     @Override
     public void run(){
-        String  [] Word = { "Writer","Teacher","Pilot","Lawyer",
-                "Fireman","Farmer","Engineer","Doctor", "Mechanic",
-                "Dancer","Chef","Cook","Reporter", "Soldier",
-                "Policeman","Actor","Barber", "Dentish"};
+        String  [] Word = { "AmericanPieReunion","MenInBlack","Prometheus","GIjoe",
+                "Spiderman","Batman","Brave","Skyfall", "TheHobbit",
+                "Avengers","JohnCarter","Battleship","Journey", "Iceage",
+                "Dredd","Taken","Coldwar", "Argo"};
         String rand_word;
         char[] hidden_word;
         String user_guess = "";
