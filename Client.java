@@ -83,7 +83,7 @@ public class Client {
             System.out.println("new Port: " + newPort);
             keyboard = new Scanner(System.in);
 
-            //// switch to new port
+            // switch to new port
             socket = new Socket("server", Integer.parseInt(newPort));
             socketOutput = new ObjectOutputStream(socket.getOutputStream());
             socketInput = new ObjectInputStream(socket.getInputStream());
@@ -111,18 +111,18 @@ public class Client {
             System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
 
             if (isWin==1){
-                System.out.println( "Yeah! you Win" );
+                System.out.println( "Yeah! you WIN" );
                 System.out.println( "The word was..." + hidden_word );
 
             }
             else if (isLose ==1) {
                 String answer = getAnswer();
-                System.out.println("Sorry guy");
+                System.out.println("Sorry....");
                 System.out.println("The word was..." + answer);
             }
 
             // send "exit" for tell server thead to close socket
-            socketOutput.writeObject("exit");
+            socketOutput.writeObject("EXIT");
 
             // close socket
             socketOutput.close();
